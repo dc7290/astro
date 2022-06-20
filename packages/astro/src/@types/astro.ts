@@ -736,7 +736,7 @@ export interface AstroConfig extends z.output<typeof AstroConfigSchema> {
 export type AsyncRendererComponentFn<U> = (
 	Component: any,
 	props: any,
-	children: string | undefined,
+	slots: Record<string, string>,
 	metadata?: AstroComponentMetadata
 ) => Promise<U>;
 
